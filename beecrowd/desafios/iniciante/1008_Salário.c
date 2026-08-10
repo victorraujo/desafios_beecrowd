@@ -38,7 +38,7 @@ int main (void) {
                        // SALARIO DO MÊS
     double salario_mes = (pessoa.estatisticas.horas * pessoa.estatisticas.salario);
 
-    printf ("NUMBER = %i\n", pessoa.estatisticas.horas);
+    printf ("NUMBER = %i\n", pessoa.estatisticas.funcionario);
     printf ("SALARY = U$ %0.2lf\n", salario_mes);
 
 }
