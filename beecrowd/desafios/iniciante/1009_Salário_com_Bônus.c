@@ -33,12 +33,12 @@ typedef struct {
 
 int main (void) {
     funcionario pessoa;
-    scanf("%s %lf %lf", &pessoa.estatisticas.funcionario_nome,  //| ADICIONANDO DADOS
+    scanf("%s %lf %lf", pessoa.estatisticas.funcionario_nome,  //| ADICIONANDO DADOS
                        &pessoa.estatisticas.salario_fixo,       //|       A
                        &pessoa.estatisticas.vendas );          //|   ESTRUTURA
 
                        // SALARIO DO MÊS + (15% das vendas)
     pessoa.estatisticas.salario_do_mes = pessoa.estatisticas.salario_fixo + (pessoa.estatisticas.vendas * 0.15);
     printf ("TOTAL = R$ %0.2lf\n", pessoa.estatisticas.salario_do_mes);
-
+    return 0;
 }
