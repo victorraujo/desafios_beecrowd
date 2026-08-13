@@ -34,13 +34,13 @@ int main(void)
     for (int i = 0; i < MAX_OBJETOS; i++)
     {
         ponteiro = &produto[i]; // ponteiro consegue o endereço
-        scanf("%i, %i, %lf", ponteiro->codigo, ponteiro->objetos, ponteiro->valor);
+        scanf("%d %d %lf", &ponteiro->codigo, &ponteiro->objetos, &ponteiro->valor);
 
         ponteiro = NULL; // zeramento do ponteiro (endereço)
     }
     //                       PRIMEIRO PRODUTO + SEGUNDO PRODUTO( FORMULA )
     double soma_total = (produto[0].valor * produto[0].objetos) + (produto[1].valor * produto[1].objetos);
     
-    printf("VALOR A PAGAR: R$ %lf", soma_total);
+    printf("VALOR A PAGAR: R$ %.2lf\n", soma_total);
     return 0;
 }
