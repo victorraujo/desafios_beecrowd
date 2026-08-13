@@ -4,10 +4,10 @@
  ==========================================
   
   Autor:   victor rafael dantas de araujo
-  Data:    10/08/2026
+  Data:    13/08/2026
   
   Descrição:
-    Este programa faz o calculo do salario do mês.
+    Este programa faz a soma do sálario do mês + 15 porcento das vendas.
     
   Anotações importantes:
     - entendendo estruturas.
