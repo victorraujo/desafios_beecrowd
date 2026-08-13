@@ -12,6 +12,7 @@
   Anotações importantes:
     - uma soma simples.
     - compliquei um pouco usando ponteiro para treinar lógica.
+    - logica de ponteiros utilizando structs
  ==========================================
  */
 #include <stdio.h>
