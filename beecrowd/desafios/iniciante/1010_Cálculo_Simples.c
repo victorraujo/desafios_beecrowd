@@ -4,10 +4,10 @@
  ==========================================
   
   Autor:   victor rafael dantas de araujo
-  Data:    não finalizado
+  Data:    13/08/2026
   
   Descrição:
-    ...
+    calculando valor a pagar da peça.
     
   Anotações importantes:
     - uma soma simples
