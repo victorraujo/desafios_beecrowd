@@ -12,6 +12,7 @@
   Anotações importantes:
     - entendendo estruturas.
     - observar como funciona igual uma escada a chamada de estrutura dentro de outra.
+    - porcetagem
  ==========================================
  */
 
@@ -36,8 +37,8 @@ int main (void) {
                        &pessoa.estatisticas.salario_fixo,       //|       A
                        &pessoa.estatisticas.vendas );          //|   ESTRUTURA
 
-                       // SALARIO DO MÊS + 15%
-    pessoa.estatisticas.salario_do_mes = pessoa.estatisticas.salario_fixo + (pessoa.estatisticas.salario_fixo * 0.15);
+                       // SALARIO DO MÊS + (15% das vendas)
+    pessoa.estatisticas.salario_do_mes = pessoa.estatisticas.salario_fixo + (pessoa.estatisticas.vendas * 0.15);
     printf ("TOTAL = R$ %0.2lf\n", pessoa.estatisticas.salario_do_mes);
 
 }
