@@ -10,8 +10,8 @@
     calculando valor a pagar da peça.
     
   Anotações importantes:
-    - uma soma simples
-    - compliquei um pouco usando ponteiro para treinar lógica
+    - uma soma simples.
+    - compliquei um pouco usando ponteiro para treinar lógica.
  ==========================================
  */
 #include <stdio.h>
