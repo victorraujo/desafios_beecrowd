@@ -34,7 +34,7 @@ int main(void)
     for (int i = 0; i < MAX_OBJETOS; i++)
     {
         ponteiro = &produto[i]; // ponteiro consegue o endereço
-        scanf("%d %d %lf", &ponteiro->codigo, &ponteiro->objetos, &ponteiro->valor);
+        scanf("%d %d %lf", &ponteiro->codigo, &ponteiro->objetos, &ponteiro->valor); // precisa do & porque está acessando o oq esta apontando
 
         ponteiro = NULL; // zeramento do ponteiro (endereço)
     }
