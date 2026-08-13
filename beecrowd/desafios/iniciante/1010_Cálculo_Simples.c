@@ -3,7 +3,7 @@
           ANOTAÇÕES DO PROJETO
  ==========================================
   
-  Autor:   victor rafael dantas de araujo
+  Autor:   Victor Rafael Dantas de Araujo
   Data:    13/08/2026
   
   Descrição:
