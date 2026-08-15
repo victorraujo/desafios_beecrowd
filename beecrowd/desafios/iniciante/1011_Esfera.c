@@ -4,15 +4,15 @@
  ==========================================
   
   Autor:   Victor Rafael Dantas de Araujo
-  Data:    13/08/2026
+  Data:    não finalizado.
   
   Descrição:
-    calculando valor a pagar da peça.
+    calculando tamanho do raio.
     
   Anotações importantes:
-    - uma soma simples.
-    - compliquei um pouco usando ponteiro para treinar lógica.
-    - logica de ponteiros utilizando structs
+    - 
+    - 
+    - 
  ==========================================
  */
 #include <stdio.h>
