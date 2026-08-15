@@ -4,7 +4,7 @@
  ==========================================
   
   Autor:   Victor Rafael Dantas de Araujo
-  Data:    não finalizado
+  Data:    15/08/2026
   
   Descrição:
     Descubra a área.
@@ -83,7 +83,7 @@ void display(status_usuario usuario)
     printf("TRIANGULO: %.3lf\n", usuario.area.triangulo);
     printf("CIRCULO: %.3lf\n", usuario.area.circulo);
     printf("TRAPEZIO: %.3lf\n", usuario.area.trapezio);
-    printf("QUADRADO:  %.3lf\n", usuario.area.quadrado);
+    printf("QUADRADO: %.3lf\n", usuario.area.quadrado);
     printf("RETANGULO: %.3lf\n", usuario.area.retangulo);
 }
 int main(void)
