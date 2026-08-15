@@ -20,6 +20,33 @@
  */
 #include <stdio.h>
 
+#define PI 3.14159 // valor de PI
+
+// grupo de entrada do usuario
+typedef struct {
+    double a;
+    double b;
+    double c;
+} dados_valores;
+
+// grupo de resultados de areas
+typedef struct {
+    double triangulo;
+    double circulo;
+    double trapezio;
+    double quadrado;
+    double retangulo;
+} dados_area;
+
+// grupo de painel do usuario
+typedef struct {
+    dados_valores valores;
+    dados_area area;
+
+} status_usuario;
+
+
+
 int main(void)
 {
 
