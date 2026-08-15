@@ -47,8 +47,18 @@ typedef struct {
 
 // funções de formulas
 
-triangulo(status_usuario *usuario);
-circulo(status_usuario *usuario);
+void triangulo(status_usuario *usuario)
+{
+    //     (BASE VEZES ALTURA DIVIDIDO POR 2)
+    usuario->area.triangulo = usuario->valores.a * usuario->valores.c / 2.0;
+    return;
+}
+
+void circulo(status_usuario *usuario)
+{
+    // Lembrando que o raio aqui é o C!
+    usuario->area.circulo = PI * usuario->valores.c *  usuario->valores.c;
+}
 trapezio(status_usuario *usuario);
 quadrado(status_usuario *usuario);
 display(status_usuario usuario);
@@ -72,8 +82,5 @@ int main(void)
     
 
     return 0;
-
-
-    
-
 }
+
