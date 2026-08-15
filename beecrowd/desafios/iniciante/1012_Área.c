@@ -62,7 +62,7 @@ void circulo(status_usuario *usuario)
 void trapezio(status_usuario *usuario)
 {
     // A área do trapézio que tem A e B por bases e C por altura.
-    usuario->area.trapezio = (usuario->valores.a + usuario->valores.b) * usuario->valores.c;
+    usuario->area.trapezio = (usuario->valores.a + usuario->valores.b) * usuario->valores.c / 2.0;
 }
 
 void quadrado(status_usuario *usuario)
@@ -74,7 +74,7 @@ void quadrado(status_usuario *usuario)
 void retangulo(status_usuario *usuario)
 {
     //        A área do retângulo que tem lados A e B.
-    usuario->area.quadrado = usuario->valores.a + usuario->valores.b;
+    usuario->area.retangulo= usuario->valores.a * usuario->valores.b;
 }
 void display(status_usuario usuario)
 {
