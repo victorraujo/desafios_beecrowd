@@ -90,7 +90,7 @@ int main(void)
 {
     status_usuario usuario;
 
-    scanf("%lf %lf %lf", &usuario.valores);
+    scanf("%lf %lf %lf", &usuario.valores.a, &usuario.valores.b, &usuario.valores.c);
 
     triangulo(&usuario);
 
