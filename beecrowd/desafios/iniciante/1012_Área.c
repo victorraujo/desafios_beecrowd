@@ -76,7 +76,7 @@ void retangulo(status_usuario *usuario)
     //        A área do retângulo que tem lados A e B.
     usuario->area.quadrado = usuario->valores.a + usuario->valores.b;
 }
-display(status_usuario usuario)
+void display(status_usuario usuario)
 {
 
     //    FÓRMULAS DISPLAYS
@@ -105,4 +105,3 @@ int main(void)
     display(usuario);
     return 0;
 }
-
