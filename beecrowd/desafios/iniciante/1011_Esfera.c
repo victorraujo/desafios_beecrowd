@@ -4,14 +4,14 @@
  ==========================================
   
   Autor:   Victor Rafael Dantas de Araujo
-  Data:    não finalizado.
+  Data:    15/08/2026
   
   Descrição:
     calculando tamanho do raio.
     
   Anotações importantes:
-    - 
-    - 
+    - aprendendo a usar fórmulas.
+    - lógica mátematica.
     - 
  ==========================================
  */
