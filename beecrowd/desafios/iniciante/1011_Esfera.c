@@ -26,4 +26,10 @@ int main(void)
 
     scanf("%lf", &raio);   // pegar o raio da bola
 
+        //     FÓRMULA
+    volume = (4.0/3) * PI * raio * raio * raio;
+
+    printf("VOLUME = %.3lf\n", volume); // saída do resultado
+    return 0;
+
 }
