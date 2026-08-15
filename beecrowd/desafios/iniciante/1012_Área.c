@@ -7,29 +7,29 @@
   Data:    não finalizado
   
   Descrição:
-    descubra a área.
+    Descubra a área.
     
   Anotações importantes:
     - ÄREAS A DESCUBRIR:
-    - descubra TRIANGULO
-    - descubra CIRCULO
-    - descubra TRAPEZIO
-    - descubra QUADRADO
-    - descubra RETANGULO
+    - Descubra TRIANGULO
+    - Descubra CIRCULO
+    - Descubra TRAPEZIO
+    - Descubra QUADRADO
+    - Descubra RETANGULO
  ==========================================
  */
 #include <stdio.h>
 
-#define PI 3.14159 // valor de PI
+#define PI 3.14159 // Valor de PI
 
-// grupo de entrada do usuario
+// Grupo de entrada do usuario
 typedef struct {
-    double a; // base
-    double b; // altura
+    double a; 
+    double b; 
     double c;
 } dados_valores;
 
-// grupo de resultados de areas
+// Grupo de resultados de areas
 typedef struct {
     double triangulo;
     double circulo;
@@ -38,14 +38,14 @@ typedef struct {
     double retangulo;
 } dados_area;
 
-// grupo de painel do usuario
+// Grupo de painel do usuario
 typedef struct {
     dados_valores valores;
     dados_area area;
 
 } status_usuario;
 
-// funções de formulas
+// Funções de formulas
 
 void triangulo(status_usuario *usuario)
 {
@@ -58,12 +58,24 @@ void circulo(status_usuario *usuario)
     // Lembrando que o raio aqui é o C!
     usuario->area.circulo = PI * usuario->valores.c *  usuario->valores.c;
 }
-trapezio(status_usuario *usuario)
+
+void trapezio(status_usuario *usuario)
 {
-    // a área do trapézio que tem A e B por bases e C por altura.
+    // A área do trapézio que tem A e B por bases e C por altura.
     usuario->area.trapezio = (usuario->valores.a + usuario->valores.b) * usuario->valores.c;
 }
-quadrado(status_usuario *usuario);
+
+void quadrado(status_usuario *usuario)
+{
+    //         A área do quadrado que tem lado B
+    usuario->area.quadrado = usuario->valores.b * usuario->valores.b;
+}
+
+void retangulo(status_usuario *usuario)
+{
+    //        A área do retângulo que tem lados A e B.
+    usuario->area.quadrado = usuario->valores.a + usuario->valores.b;
+}
 display(status_usuario usuario);
 int main(void)
 {
