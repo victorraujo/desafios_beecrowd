@@ -76,7 +76,16 @@ void retangulo(status_usuario *usuario)
     //        A área do retângulo que tem lados A e B.
     usuario->area.quadrado = usuario->valores.a + usuario->valores.b;
 }
-display(status_usuario usuario);
+display(status_usuario usuario)
+{
+
+    //    FÓRMULAS DISPLAYS
+    printf("TRIANGULO: %.3lf\n", usuario.area.triangulo);
+    printf("CIRCULO: %.3lf\n", usuario.area.circulo);
+    printf("TRAPEZIO: %.3lf\n", usuario.area.trapezio);
+    printf("QUADRADO:  %.3lf\n", usuario.area.quadrado);
+    printf("RETANGULO: %.3lf\n", usuario.area.retangulo);
+}
 int main(void)
 {
     status_usuario usuario;
@@ -94,8 +103,6 @@ int main(void)
     retangulo(&usuario);
     
     display(usuario);
-    
-
     return 0;
 }
 
