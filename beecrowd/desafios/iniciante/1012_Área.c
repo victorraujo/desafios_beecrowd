@@ -24,8 +24,8 @@
 
 // grupo de entrada do usuario
 typedef struct {
-    double a;
-    double b;
+    double a; // base
+    double b; // altura
     double c;
 } dados_valores;
 
@@ -51,7 +51,6 @@ void triangulo(status_usuario *usuario)
 {
     //     (BASE VEZES ALTURA DIVIDIDO POR 2)
     usuario->area.triangulo = usuario->valores.a * usuario->valores.c / 2.0;
-    return;
 }
 
 void circulo(status_usuario *usuario)
@@ -59,7 +58,11 @@ void circulo(status_usuario *usuario)
     // Lembrando que o raio aqui é o C!
     usuario->area.circulo = PI * usuario->valores.c *  usuario->valores.c;
 }
-trapezio(status_usuario *usuario);
+trapezio(status_usuario *usuario)
+{
+    // a área do trapézio que tem A e B por bases e C por altura.
+    usuario->area.trapezio = (usuario->valores.a + usuario->valores.b) * usuario->valores.c;
+}
 quadrado(status_usuario *usuario);
 display(status_usuario usuario);
 int main(void)
