@@ -31,5 +31,4 @@ int main(void)
 
     printf("VOLUME = %.3lf\n", volume); // saída do resultado
     return 0;
-
 }
