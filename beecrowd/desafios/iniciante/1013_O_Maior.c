@@ -4,7 +4,7 @@
  ==========================================
   
   Autor:   Victor Rafael Dantas de Araujo
-  Data:    não finalizado.
+  Data:    16/08/2026
   
   Descrição:
     Criar um programa pra dizer 
