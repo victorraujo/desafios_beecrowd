@@ -7,7 +7,7 @@
   Data:     17/08/2026
  
   Descrição:
-    quantidade de litros percorrido
+    quantidade de litros gasta.
    
   Anotações importantes:
     - primeiro digite o tempo gasto na viagem em horas
