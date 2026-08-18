@@ -4,7 +4,7 @@
  ==========================================
  
   Autor:   Victor Rafael Dantas de Araújo
-  Data:     não finalizado.
+  Data:     17/08/2026
  
   Descrição: 
     Dois carros (X e Y) partem em uma mesma direção. 
@@ -26,7 +26,6 @@
  */
 
 #include <stdio.h>
-#include <math.h>
 int formula(int km)
 {
     // dobramento
@@ -43,7 +42,7 @@ int main(void)
     // 1 km == 2 minutos ou seja apenas dobrar o número que vier
 
     distancia_km = formula(distancia_km);
-    printf("%d minutos", distancia_km);
+    printf("%d minutos\n", distancia_km);
 
     return 0;
 }
