@@ -32,7 +32,7 @@ typedef struct {
 } status_dinheiro; // tipo de cedulas
 
 
-zeramento(status_dinheiro *dinheiro)
+void zeramento(status_dinheiro *dinheiro)
 {
     dinheiro -> cem = 0;
     dinheiro -> cinquenta = 0;
@@ -55,15 +55,21 @@ int main(void)
     scanf("%d", &cedula);
 
     dinheiro.cem = cedula / 100;
+    cedula = cedula % 100;
+
     dinheiro.cinquenta = cedula / 50;
-    dinheiro.vinte = cedula / 20;
+    cedula = cedula % 50;
+
+    dinheiro.cem = cedula / 20;
+    cedula = cedula % 20;
+
 
     // dinheiro.cem = cedula % sobra;
 
-    printf("%d\n", dinheiro.cem);
-    printf("%d\n", dinheiro.cinquenta);
-    printf("%d\n", dinheiro.vinte);
-    printf("%d\n", dinheiro.cem);
+    printf("%d nota(s) de R$ 100,00\n", dinheiro.cem);
+    printf("%d nota(s) de R$ 50,00\n", dinheiro.cinquenta);
+    printf("%d nota(s) de R$ 20,00\n", dinheiro.vinte);
+    printf("%d nota(s) de R$ 10,00\n", dinheiro.dez);
     
 
 
