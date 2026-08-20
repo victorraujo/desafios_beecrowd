@@ -79,7 +79,7 @@ int main(void)
 
 
     // display
-     printf("%d", valor_lido);
+    printf("%d\n", valor_lido);
     printf("%d nota(s) de R$ 100,00\n", dinheiro.cem);
     printf("%d nota(s) de R$ 50,00\n", dinheiro.cinquenta);
     printf("%d nota(s) de R$ 20,00\n", dinheiro.vinte);
