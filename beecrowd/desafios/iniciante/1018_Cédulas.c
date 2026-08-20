@@ -4,14 +4,14 @@
  ==========================================
  
   Autor:   Victor Rafael Dantas de Araújo
-  Data:     não finalizado.
+  Data:     19/08/2026
  
   Descrição:
-    
+    Contador de dinheiro.
    
   Anotações importantes:
-    - 
-    - 
+    - lógica mátematica de divisão e resto
+    - digite apenas o número que você quer saber quantos reais cabem em cada cédula
     - 
 
  ==========================================
@@ -51,10 +51,10 @@ int main(void)
     zeramento(&dinheiro);
     int sobra = 0;
     int cedula = 0;
-    int valor_lido;
+    
     
     scanf("%d", &cedula);
-    
+    int valor_lido = cedula;
     
     dinheiro.cem = cedula / 100;     //|  100
     cedula = cedula % 100;           //| REAIS
