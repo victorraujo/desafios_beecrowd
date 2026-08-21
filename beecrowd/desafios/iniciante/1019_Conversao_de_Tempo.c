@@ -4,7 +4,7 @@
  ==========================================
  
   Autor:   Victor Rafael Dantas de Araújo
-  Data:     não finalizado.
+  Data:     20/08/2026
  
   Descrição:
     conversão de número para tempo(horas)
