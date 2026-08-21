@@ -11,74 +11,75 @@
    
   Anotações importantes:
     - diga o valor.
-    - usei a biblioteca math.h para calcular o resto com pontos flutuantes.
-    - a função da math que usei chama-se (fmodf).
+    - usei a mutiplicação para transformar em inteiro e usei +0.5 para caso arredondar decimais com 99
+    - 
 
 ==========================================
 */
 #include <stdio.h>
-#include <math.h> // fmodf calcular dois pontos flutuantes
 
 int main(void)
 {
-    float usuario;
-    float cem, ciquenta, vinte, dez, cinco, dois;
-    float um, cinquenta_centavos, vinte_cinco_centavos, dez_centavos, cinco_centavos, um_centavo;
+    double valor_usuario;
+    int usuario, cem, ciquenta, vinte, dez, cinco, dois;
+    int um, cinquenta_centavos, vinte_cinco_centavos, dez_centavos, cinco_centavos, um_centavo;
 
-    scanf("%f", &usuario);
+    scanf("%lf", &valor_usuario);         //0.5 -> para arredondar caso alguma decimal fosse 99
+    usuario = (int) (valor_usuario * 100.0) +0.5; // numeros decimais viram int (576.73 - > 57673)
 
-    cem = usuario / 100;
-    usuario = fmodf(usuario, 100.00f); // fmodf nome da funcao que faz resto entre pontos flutuantes. 
+    cem = usuario / 10000;  // ja que mutipliquei pra 100 entao devemos dividir pelos numero dos zero das casas decimais
+    usuario = usuario % 10000;
 
+    ciquenta = usuario / 5000; // duas decimal entao mais dois zeros por causa da mutiplicação
+    usuario = usuario % 5000; 
 
-    ciquenta = usuario / 50;
-    usuario = fmodf(usuario, 50.00f); // esse f no final significa que e float senão o c acha que e double.
+    vinte = usuario / 2000;
+    usuario = usuario % 2000;
 
-    vinte = usuario / 20;
-    usuario = fmodf(usuario, 20.00f);
+    dez = usuario / 1000;
+    usuario = usuario % 1000;
 
-    dez = usuario / 10;
-    usuario = fmodf(usuario, 10.00f);
+    cinco = usuario / 500;
+    usuario = usuario % 500;
 
-    cinco = usuario / 5;
-    usuario = fmodf(usuario, 5.00f);
-
-    vinte = usuario / 2;
-    usuario = fmodf(usuario, 2.00f);
+    dois = usuario / 200;
+    usuario = usuario % 200;
 
     // MOEDAS AGORA
-    um = usuario / 1;
-    usuario = fmodf(usuario, 1.00f);
+    um = usuario / 100;
+    usuario = usuario % 100;
 
-    cinquenta_centavos = usuario / 0.50;
-    usuario = fmodf(usuario, 0.50f);
+    cinquenta_centavos = usuario / 50;
+    usuario = usuario % 50;
 
-    vinte_cinco_centavos = usuario / 0.25;
-    usuario = fmodf(usuario, 0.25f);
+    vinte_cinco_centavos = usuario / 25;
+    usuario = usuario % 25;
 
-    dez_centavos = usuario / 0.10;
-    usuario = fmodf(usuario, 0.10f);
+    dez_centavos = usuario / 10;
+    usuario = usuario % 10;
 
-    cinco_centavos = usuario / 0.10;
-    usuario = fmodf(usuario, 0.05f);
+    cinco_centavos = usuario / 5;
+    usuario = usuario % 5;
+
+    um_centavo = usuario / 1;
 
     um_centavo = usuario; // oq sobrar e centavo
 
     printf("NOTAS:\n"
-           "%.2f nota(s) de R$ 100.00\n"
-           "%.2f nota(s) de R$ 50.00\n"
-           "%.2f nota(s) de R$ 20.00\n"
-           "%.2f nota(s) de R$ 10.00\n"
-           "%.2f nota(s) de R$ 5.00\n"
-           "%.2f nota(s) de R$ 2.00\n"
+           "%d nota(s) de R$ 100.00\n"
+           "%d nota(s) de R$ 50.00\n"
+           "%d nota(s) de R$ 20.00\n"
+           "%d nota(s) de R$ 10.00\n"
+           "%d nota(s) de R$ 5.00\n"
+           "%d nota(s) de R$ 2.00\n"
            
            "MOEDAS:\n"
-           "%.2f nota(s) de R$ 1.00\n"
-           "%.2f nota(s) de R$ 0.50\n"
-           "%.2f nota(s) de R$ 0.25\n"
-           "%.2f nota(s) de R$ 0.10\n"
-           "%.2f nota(s) de R$ 0.05\n"
-           "%.2f nota(s) de R$ 0.01\n", 
+           "%d nota(s) de R$ 1.00\n"
+           "%d nota(s) de R$ 0.50\n"
+           "%d nota(s) de R$ 0.25\n"
+           "%d nota(s) de R$ 0.10\n"
+           "%d nota(s) de R$ 0.05\n"
+           "%d nota(s) de R$ 0.01\n", 
            cem, ciquenta, vinte, dez, cinco, dois, um, cinquenta_centavos, vinte_cinco_centavos,
            dez_centavos, cinco_centavos, um_centavo);
     return 0;
