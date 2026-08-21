@@ -25,7 +25,7 @@ int main(void)
     int um, cinquenta_centavos, vinte_cinco_centavos, dez_centavos, cinco_centavos, um_centavo;
 
     scanf("%lf", &valor_usuario);         //0.5 -> para arredondar caso alguma decimal fosse 99
-    usuario = (int) (valor_usuario * 100.0) +0.5; // numeros decimais viram int (576.73 - > 57673)
+    usuario = (int) (valor_usuario * 100.0 +0.5); // numeros decimais viram int (576.73 - > 57673)
 
     cem = usuario / 10000;  // ja que mutipliquei pra 100 entao devemos dividir pelos numero dos zero das casas decimais
     usuario = usuario % 10000;
@@ -74,12 +74,12 @@ int main(void)
            "%d nota(s) de R$ 2.00\n"
            
            "MOEDAS:\n"
-           "%d nota(s) de R$ 1.00\n"
-           "%d nota(s) de R$ 0.50\n"
-           "%d nota(s) de R$ 0.25\n"
-           "%d nota(s) de R$ 0.10\n"
-           "%d nota(s) de R$ 0.05\n"
-           "%d nota(s) de R$ 0.01\n", 
+           "%d moeda(s) de R$ 1.00\n"
+           "%d moeda(s) de R$ 0.50\n"
+           "%d moeda(s) de R$ 0.25\n"
+           "%d moeda(s) de R$ 0.10\n"
+           "%d moeda(s) de R$ 0.05\n"
+           "%d moeda(s) de R$ 0.01\n", 
            cem, ciquenta, vinte, dez, cinco, dois, um, cinquenta_centavos, vinte_cinco_centavos,
            dez_centavos, cinco_centavos, um_centavo);
     return 0;
