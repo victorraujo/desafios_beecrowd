@@ -41,8 +41,6 @@ void calcular(status_fracao *fracao, char operacao)
     
 }
 
-
-
 int calcular_mdc(int a, int b) // numerador / denominador
 {
     while ( b !=)
