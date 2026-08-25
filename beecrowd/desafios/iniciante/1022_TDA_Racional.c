@@ -18,11 +18,6 @@
 ==========================================
 */
 
-
-
-
-
-
 // ensinar o computador fração
 
 #include <stdio.h>
