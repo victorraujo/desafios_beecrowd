@@ -1,3 +1,28 @@
+/*
+==========================================
+          ANOTAÇÕES DO PROJETO
+==========================================
+ 
+  Autor:   Victor Rafael Dantas de Araújo
+  Data:     25/08/2026
+ 
+  Descrição:
+    calcula de fração (tda racional)
+   
+  Anotações importantes:
+    - sempre verifique de botar quantos calculos vc quer(sera calculado um por vez) 
+    - aprendendo mdc
+    - aprendendo a usar scanf melhor
+    - 
+
+==========================================
+*/
+
+
+
+
+
+
 // ensinar o computador fração
 
 #include <stdio.h>
