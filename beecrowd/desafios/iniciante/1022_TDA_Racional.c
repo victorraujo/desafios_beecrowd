@@ -12,8 +12,8 @@ typedef struct
     fracao denominador[2];
     calculado num_bruto;
     calculado de_bruto;
-    calculado num_simplificado;
-    calculado de_simplificado;
+    calculado num_simplificado; // numerador
+    calculado de_simplificado;  // denominador
 } status_fracao;
 
 void calcular(status_fracao *fracao, char operacao)
@@ -54,7 +54,10 @@ int calcular_mdc(int a, int b) // numerador / denominador
 
 void simplificacao(status_fracao *fracao)
 {
-    
+    int mdc = calcular_mdc(abs(fracao->num_bruto), fracao->de_bruto); // pra pegar o minimo mutiplo comum de mdc
+
+    fracao->num_simplificado = fracao->num_bruto / mdc; // so dividir agora
+    fracao->de_simplificado = fracao->de_bruto / mdc;
 }
 int main(void)
 {
@@ -71,7 +74,6 @@ int main(void)
 
         calcular(&fracao, op);
         simplificacao(&fracao);
-
 
         printf("%d/%d = %d/%d\n", fracao.num_bruto, fracao.de_bruto, fracao.num_simplificado, fracao.de_simplificado);
     }
